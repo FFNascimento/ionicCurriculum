@@ -7,5 +7,21 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-card>
+    <ion-card-header><ion-icon name="briefcase"></ion-icon> Objetivos Profissionais:</ion-card-header>
+    <ion-card-content>
+      <ion-item *ngFor="let goal of objetivos.professionalGoals">
+        <h2>{{goal}}</h2>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 
+  <ion-card>
+    <ion-card-header> <ion-icon name="body"></ion-icon> Objetivos Pessoais:</ion-card-header>
+    <ion-card-content>
+      <ion-item *ngFor="let goal of objetivos.personalGoals">
+        <h2>{{goal}}</h2>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -14,5 +14,17 @@
 
 
 <ion-content padding>
-
+  <ion-card *ngFor="let work of workList">
+    <ion-item>
+      <ion-avatar item-left>
+        <img [src]="work.img" alt="" />
+      </ion-avatar>
+      <h2>{{work.place}}</h2>
+      <p>{{work.role}}</p>
+      <p>
+        <span>Período: </span><span>{{work.start | date: 'dd/MM/yyyy'}}</span> - <span *ngIf="!work.current">{{work.end | date: 'dd/MM/yyyy'}}</span>
+        <span *ngIf="work.current">Atualmente</span>
+      </p>
+    </ion-item>
+  </ion-card>
 </ion-content>

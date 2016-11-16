@@ -11,10 +11,13 @@
   <ion-card *ngFor="let education of educationList">
     <ion-item>
       <ion-avatar item-left>
-        <img src="{{education.image}}" alt="" />
+        <img [src]="education.image" alt="" />
       </ion-avatar>
       <h2>{{education.educationalInstitution}}</h2>
       <p>{{education.courseName}}</p>
+      <p>
+        <span>Período: {{education.admissionYear}} - {{education.conclusionYear}}</span>
+      </p>
     </ion-item>
   </ion-card>
 
