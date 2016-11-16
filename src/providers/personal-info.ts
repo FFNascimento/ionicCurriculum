@@ -20,8 +20,8 @@ export class PersonalInfo {
     'JD. Herculano', 'SP', '04920-030');
 
   // Education
-  public etec: Education = new Education('ETEC Jardim Angela', 'Informática', 2012, 2013);
-  public senac: Education = new Education('Centro Universitário Senac', 'Análise e Desenvolvimento de sistemas', 2015, 2017);
+  public etec: Education = new Education('ETEC Jardim Angela', 'Informática', 2012, 2013, 'assets/imgs/etec-logo.png');
+  public senac: Education = new Education('Centro Universitário Senac', 'Análise e Desenvolvimento de sistemas', 2015, 2017, 'assets/imgs/senac-logo.png');
 
   //
   public fabricio: Person = new Person('Fabricio Ferreira do Nascimento', 21,

@@ -9,8 +9,13 @@
 <ion-content>
 
   <ion-card *ngFor="let education of educationList">
-    <ion-card-header>{{education.educationalInstitution}}</ion-card-header>
-    <ion-card-content>{{education.courseName}}</ion-card-content>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{education.image}}" alt="" />
+      </ion-avatar>
+      <h2>{{education.educationalInstitution}}</h2>
+      <p>{{education.courseName}}</p>
+    </ion-item>
   </ion-card>
 
 </ion-content>
